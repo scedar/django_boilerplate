@@ -1,0 +1,48 @@
+{% load widget_tweaks %}
+
+{% comment %}{% for field in form %}
+  <div class="form-group{% if field.errors %} has-error{% endif %}">
+    <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+    {% render_field field class="form-control" %}
+    {% for error in field.errors %}
+      <p class="help-block">{{ error }}</p>
+    {% endfor %}
+  </div>
+{% endfor %}{% endcomment %}
+
+
+<div class="form-group{% if form.title.errors %} has-error{% endif %}">
+    <label for="{{ form.title.id_for_label }}">{{ form.title.label }}</label>
+    {% render_field form.title class="form-control" %}
+</div>
+<div class="form-group{% if form.publication_date.errors %} has-error{% endif %}">
+    <label for="{{ form.publication_date.id_for_label }}">{{ form.publication_date.label }}</label>
+    {% render_field form.publication_date class="form-control" %}
+  </div>
+<div class="form-group{% if form.author.errors %} has-error{% endif %}">
+    <label for="{{ form.author.id_for_label }}">{{ form.author.label }}</label>
+    {% render_field form.author class="form-control" %}
+  </div>
+<div class="form-group{% if form.price.errors %} has-error{% endif %}">
+    <label for="{{ form.price.id_for_label }}">{{ form.price.label }}</label>
+    {% render_field form.price class="form-control" %}
+  </div>
+<div class="form-group{% if form.pages.errors %} has-error{% endif %}">
+    <label for="{{ form.pages.id_for_label }}">{{ form.pages.label }}</label>
+    {% render_field form.pages class="form-control" %}
+  </div>
+<div class="form-group{% if form.book_type.errors %} has-error{% endif %}">
+    <label for="{{ form.book_type.id_for_label }}">{{ form.book_type.label }}</label>
+    {% render_field form.book_type class="form-control" %}
+  </div>
+<div class="form-group{% if form.book_cover.errors %} has-error{% endif %}">
+    <label for="{{ form.book_cover.id_for_label }}">{{ form.book_cover.label }}</label>
+    {% render_field form.book_cover class="form-control-file" %}
+  </div>
+
+{{ form.location }}
+{{ form.media }}
+
+
+{% comment %}<h2>Image Upload</h2><br>
+{{ form.book_cover }}<br>{% endcomment %}
