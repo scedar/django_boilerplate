@@ -51,6 +51,6 @@ python manage.py runserver
 
 ## Authors
 
-* **Ochomo William** - [Scedar Technologies Co.](https://scedar.bitbucket.io/), [ochomoswill](https://ochomoswill.github.io/)
+* **Ochomo William** - [ochomoswill](https://ochomoswill.github.io/) a member of [Scedar Technologies Co.](https://scedar.bitbucket.io/)
 
 
