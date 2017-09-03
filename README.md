@@ -1,6 +1,7 @@
 # Django Boilerplate - Simple Ajax Crud
 
-Example used in the blog post [How to Implement CRUD Using Ajax and Json](https://simpleisbetterthancomplex.com/tutorial/2016/11/15/how-to-implement-a-crud-using-ajax-and-json.html)
+A simple django application based on this example [How to Implement CRUD Using Ajax and Json](https://simpleisbetterthancomplex.com/tutorial/2016/11/15/how-to-implement-a-crud-using-ajax-and-json.html)
+and added some simple google maps functionality
 
 ## Running Locally
 
@@ -26,10 +27,20 @@ API keys may be obtained here: https://developers.google.com/maps/documentation/
 
 If you are still using Django <1.3, you are advised to install `django-staticfiles`_ for static file serving.
 
-Run `sh $ python manage.py makemigrations books`- to create migrations for those changes
-Run `sh $ python manage.py migrate` - to apply those changes to the database.
+Run the below to create migrations for those changes
+```bash
+python manage.py makemigrations books
+```
 
-Run `sh $ python manage.py runserver` - to apply those changes to the database.
+Run the below to apply those changes to the database.
+```bash
+python manage.py migrate
+```
+
+To run the application
+```bash
+python manage.py runserver
+```
 
 
 ## References
